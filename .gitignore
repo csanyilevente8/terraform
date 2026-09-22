@@ -1,0 +1,18 @@
+# Terraform state — NEVER commit. Can contain secrets, and is machine/backend specific.
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl.bak
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that may hold sensitive values (keep an example instead)
+*.tfvars
+!example.tfvars
+
+# Plan output files (may contain secrets)
+*.tfplan
+
+# Keep the provider lock file (.terraform.lock.hcl) IN git — it pins provider versions.
